@@ -5,7 +5,7 @@ const multiplesOf3and5 = (number) => {
         return arr + 1;
     });
 
-    return arrs.filter(arr => arr % 3 === 0 || arr %5 === 0).reduce((a, b) => a + b)
+    return arrs.filter(arr => arr % 3 === 0 || arr % 5 === 0).reduce((a, b) => a + b)
 
     
     
