@@ -27,10 +27,11 @@ const largestPrimeFactor = (number) => {
     for (let i = 2; i <= number; i++) {
         while ((number % i) === 0) {
             arr.push(i);
-            number /= i;
+            number = number / i;
         }
     }
-    return arr.sort((a, b) => b - a)[0];
+    return arr
+    // .sort((a, b) => b - a)[0];
   }
 
-console.log(largestPrimeFactor(13195));
+console.log(largestPrimeFactor(100));
