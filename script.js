@@ -22,16 +22,15 @@
 
 // console.log(fiboEvenSum(10));
 
-const largestPrimeFactor = (number) => {
-    let arr = [];
-    for (let i = 2; i <= number; i++) {
-        while ((number % i) === 0) {
-            arr.push(i);
-            number = number / i;
-        }
-    }
-    return arr
-    // .sort((a, b) => b - a)[0];
-  }
+// const largestPrimeFactor = number => {
+//   let arr = [];
+//   for (let i = 2; i <= number; i++) {
+//     while (number % i === 0) {
+//       arr.push(i);
+//       number = number / i;
+//     }
+//   }
+//   return arr.sort((a, b) => b - a)[0];
+// }
 
-console.log(largestPrimeFactor(100));
+// console.log(largestPrimeFactor(100));
