@@ -34,3 +34,13 @@
 // }
 
 // console.log(largestPrimeFactor(100));
+
+const sumSquareDifference = (n) => {
+  const numbers = [...Array(n).keys()].map(a => a + 1);
+  const eachSquareSum = numbers.map(num => Math.pow(num, 2)).reduce((a, b) => a + b, 0);
+  const totalSumSquare = Math.pow(numbers.reduce((a, b) => a + b, 0), 2);
+  return totalSumSquare - eachSquareSum;
+  
+}
+
+console.log(sumSquareDifference(100));
